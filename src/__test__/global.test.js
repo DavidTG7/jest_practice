@@ -34,3 +34,29 @@ test('Is a callback', () => {
 });
 
 // How to test Promises
+
+const reverseStringV2 = str => {
+  return new Promise((res, rej) => {
+    if(!str) {
+      rej(Error('Error'));
+    }
+    res(str.split('').reverse().join(''));
+  });
+};
+
+test('Test a promise', () => {
+  return reverseStringV2('Hola')
+    .then(string => {
+      expect(string).toBe('aloH');
+    })
+});
+
+
+
+
+
+
+
+
+
+
