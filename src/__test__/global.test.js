@@ -58,3 +58,8 @@ test('Testing async and await', async () => {
   expect(string).toBe('aloH');
 });
 
+afterEach(() => console.log('After each test.'))
+afterAll(() => console.log('After all tests.'))
+
+beforeEach(() =>console.log('Before each test.'))
+beforeAll(() =>console.log('Before all tests.'))
