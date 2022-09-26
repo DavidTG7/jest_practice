@@ -4,11 +4,15 @@
   "description": "Jest testing practice",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.0.3"
+  },
+  "dependencies": {
+    "jest-cli": "^29.0.3"
   }
 }

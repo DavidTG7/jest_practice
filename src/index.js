@@ -5,4 +5,13 @@ const randomString = () => {
   return string
 }
 
+const reverseStringV2 = str => {
+  return new Promise((res, rej) => {
+    if(!str) {
+      rej(Error('Error'));
+    }
+    res(str.split('').reverse().join(''));
+  });
+};
+
 module.exports = randomString
