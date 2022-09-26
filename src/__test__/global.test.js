@@ -51,12 +51,10 @@ test('Test a promise', () => {
     })
 });
 
+// To test async and await
 
-
-
-
-
-
-
-
+test('Testing async and await', async () => {
+  const string = await reverseStringV2('Hola');
+  expect(string).toBe('aloH');
+});
 
